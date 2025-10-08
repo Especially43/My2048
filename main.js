@@ -378,7 +378,7 @@ Function.prototype.bind = Function.prototype.bind || function (target) {
   
   HTMLActuator.prototype.message = function (won) {
     var type    = won ? "game-won" : "game-over";
-    var message = won ? "еђ›гЃ®е‹ќгЃЎгЃ пјЃ" : "г‚Ігѓјгѓ г‚ЄгѓјгѓђгѓјгЃ ";
+  var message = won ? "勝ちました！" : "ゲームオーバー！";
   
     this.messageContainer.classList.add(type);
     this.messageContainer.getElementsByTagName("p")[0].textContent = message;
